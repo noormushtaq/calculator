@@ -1,22 +1,78 @@
-.App {
+
+
+.app {
+
+  padding:80 px;
+
+}
+
+
+.calculator{
+
+ margin-left: 30px;
+
+ margin-top: 100px;
+  
+  border: 3px solid red;
+
   text-align: center;
+
+  border-radius: 4px;
+
+  max-width: 600px;
+
 }
 
-.App-logo {
-  height: 40vmin;
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.display {
+
+  font-size: 60px;
+
+  background:gray;
+
   color: white;
+
+   margin:0;
 }
 
-.App-link {
-  color: #09d3ac;
+
+.counter-button {
+
+  font-size: 50px;
+
 }
+
+.button-container-first button{
+  align-items: center;
+  width: 300px;
+  margin: 0;
+  padding: 0%;
+}
+
+.button-container-second button{
+
+ align-items: center;
+  width: 150px;
+margin: 0;
+padding: 0%;
+
+}
+  
+.button-container-third button{
+
+  align-items: center;
+   width: 150px;
+   margin: 0;
+   padding: 0%;
+
+ }
+   
+ .button-container-forth button{
+
+  align-items: center;
+   width: 150px;
+   margin: 0;
+   padding: 0%;
+ }
+   
+

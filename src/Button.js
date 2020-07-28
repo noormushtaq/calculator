@@ -14,12 +14,9 @@ function Button(props) {
 
             background: props.bgColor,
 
-            color: props.textColor
-
-        }}
+            color: props.textColor }}
 
             onClick={props.onClick}
-
         >
 
             {props.label}

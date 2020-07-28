@@ -27,42 +27,39 @@ function App() {
 
    function placeNumber(num){
     if(operator===''){
-      setFirstNum(firstNum+num);}
-      else{
+        setFirstNum(firstNum+num);}
+
+    else{
         setsecondNum(secondNum+num);
-      
+        
       }
+      
     }
 
-      function calculate(){
-        
+    function calculate(){
         switch(operator){
           case '+':
-            setResult(Number(firstNum)+Number(secondNum));
-            setFirstNum(null);
+            setFirstNum((Number(firstNum)+Number(secondNum)));
+            
             setsecondNum('');
             setOperater('');
             break;
           case '*':
-              setResult(Number(firstNum)*Number(secondNum));
-              setFirstNum(null);
+              setFirstNum((Number(firstNum)*Number(secondNum)));
+              
               setsecondNum('');
               setOperater('');
               break;
           case '-':
-              setResult(Number(firstNum)-Number(secondNum));
-              setFirstNum(null);
+              setFirstNum((Number(firstNum)-Number(secondNum)));
+              
               setsecondNum('');
               setOperater('');
               break;
-          default:
-                  setResult(result);
-                  
               
-           
-        }
+                  
+               }}
        
-      }
    
       function reset() {
         setFirstNum('');
@@ -74,7 +71,7 @@ function App() {
       }
    
   return (
-    
+      <div>
       <div className="calculator">
 
         <div className="display">
@@ -110,7 +107,7 @@ function App() {
 
             textColor="white" 
 
-            onClick={()=>setOperater('*') }>*</Button>
+            onClick={()=>{setOperater('*') ; calculate(setOperater('*'))} }>*</Button>
 
           </div>
 
@@ -160,7 +157,7 @@ function App() {
 
              textColor="white"
 
-             onClick={() => setOperater('-')}>-</Button>
+             onClick={() => {setOperater('-') ;calculate(setOperater('-'))}}>-</Button>
            
          </div>
 
@@ -210,9 +207,8 @@ function App() {
 
            textColor="white"
 
-           onClick={() => setOperater('+')}>+</Button>
-
-
+           onClick={() => {setOperater('+') ; calculate(setOperater('+'))} }>+</Button>
+           
            </div>
 
            <div className="button-container-forth">
@@ -263,15 +259,13 @@ function App() {
           
 
             </div>
-            
+
+            </div>
+
 
           </div>
 
-          
-            
-         
-
-  )
+    );
  
   
   }

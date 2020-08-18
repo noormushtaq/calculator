@@ -90,10 +90,10 @@ function App() {
 
             label="clear" 
 
-            bgColor="white"
+            bgColor="rgb(217, 253, 213)" 
 
-            textColor="gray"
-
+            textColor="black"
+            
             onClick={reset}/>
             
              
@@ -102,11 +102,7 @@ function App() {
           <Button 
 
             label="*" 
-
-            bgColor="red" 
-
-            textColor="white" 
-
+     
             onClick={()=>{setOperater('*') ; calculate(setOperater('*'))} }>*</Button>
 
           </div>
@@ -117,7 +113,7 @@ function App() {
 
             label="7" 
 
-            bgColor="white" 
+            bgColor="rgb(217, 253, 213)" 
 
             textColor="black"
 
@@ -130,7 +126,7 @@ function App() {
 
             label="8" 
 
-            bgColor="white" 
+            bgColor="rgb(217, 253, 213)"  
 
             textColor="black"
 
@@ -141,7 +137,7 @@ function App() {
 
             label="9" 
 
-            bgColor="white" 
+            bgColor="rgb(217, 253, 213)" 
 
             textColor="black"
 
@@ -152,10 +148,6 @@ function App() {
             <Button 
 
              label="-" 
-
-             bgColor="red" 
-
-             textColor="white"
 
              onClick={() => {setOperater('-') ;calculate(setOperater('-'))}}>-</Button>
            
@@ -168,7 +160,7 @@ function App() {
 
             label="4" 
 
-            bgColor="white" 
+            bgColor="rgb(217, 253, 213)" 
 
             textColor="black"
 
@@ -179,7 +171,7 @@ function App() {
 
              label="5" 
 
-             bgColor="white" 
+             bgColor="rgb(217, 253, 213)"  
 
              textColor="black"
 
@@ -191,7 +183,7 @@ function App() {
 
              label="6" 
 
-             bgColor="white" 
+             bgColor="rgb(217, 253, 213)" 
 
              textColor="black"
 
@@ -203,10 +195,6 @@ function App() {
 
             label="+" 
 
-            bgColor="red" 
-
-           textColor="white"
-
            onClick={() => {setOperater('+') ; calculate(setOperater('+'))} }>+</Button>
            
            </div>
@@ -217,7 +205,7 @@ function App() {
 
            label="1" 
 
-           bgColor="white" 
+           bgColor="rgb(217, 253, 213)" 
 
            textColor="black"
 
@@ -228,7 +216,7 @@ function App() {
 
            label="2" 
 
-           bgColor="white" 
+           bgColor="rgb(217, 253, 213)"  
 
            textColor="black"
 
@@ -239,7 +227,7 @@ function App() {
 
             label="3" 
 
-            bgColor="white" 
+            bgColor="rgb(217, 253, 213)" 
 
             textColor="black"
 
@@ -249,10 +237,6 @@ function App() {
             <Button 
 
             label="=" 
-
-            bgColor="red" 
-
-            textColor="white"
 
             onClick={calculate}>=</Button>
 
